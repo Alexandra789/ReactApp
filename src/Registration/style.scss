@@ -1,4 +1,4 @@
-@import "../../fonts.css";
+@import "../fonts.css";
 
 *{
   box-sizing: border-box;
@@ -47,7 +47,7 @@ body {
 
         .from {
           .title-and-subtitle {
-            margin-top: 25px;
+            margin-top: 45px;
             margin-bottom: 25px;
 
             .form__title {
@@ -60,16 +60,27 @@ body {
           }
 
           .inputs-wrapper {
+            .errorMessage {
+              color: red;
+              font-size: 15px;
+              display: block;
+              margin-bottom: 20px;
+            }
+
+            .error{
+              margin-bottom: 4px !important;
+              border: 1px solid red !important;
+            }
+
             .form__input {
               font-size: 16px;
-              &:not(:nth-last-of-type(2)) {
                 border: 1px solid rgba(0, 0, 0, 0.32);
                 border-radius: 4px;
                 width: 360px;
                 padding-left: 10px;
                 height: 50px;
                 margin-bottom: 20px;
-              }
+
 
               &:nth-last-of-type(2) {
                 margin-right: 5px;
@@ -86,11 +97,13 @@ body {
                 background: #1665D8;
                 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
                 transition: all 0.3s ease 0s;
+
                 &:hover {
                   cursor: pointer;
                   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
                 }
-                &:active{
+
+                &:active {
                   transform: translateY(5px);
                   box-shadow: none;
                   border: none;
@@ -98,7 +111,7 @@ body {
                 }
               }
 
-              &::placeholder{
+              &::placeholder {
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0.15px;

@@ -1,5 +1,4 @@
-/* @import "../../fonts.css"; */
-
+@import "../fonts.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,7 +42,7 @@ body .container .main-content .left .navigation {
   justify-content: space-between;
 }
 body .container .main-content .left .from .title-and-subtitle {
-  margin-top: 25px;
+  margin-top: 45px;
   margin-bottom: 25px;
 }
 body .container .main-content .left .from .title-and-subtitle .form__title {
@@ -53,10 +52,18 @@ body .container .main-content .left .from .title-and-subtitle .form__title {
   margin-bottom: 5px;
   color: #212529;
 }
+body .container .main-content .left .from .inputs-wrapper .errorMessage {
+  color: red;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 20px;
+}
+body .container .main-content .left .from .inputs-wrapper .error {
+  margin-bottom: 4px !important;
+  border: 1px solid red !important;
+}
 body .container .main-content .left .from .inputs-wrapper .form__input {
   font-size: 16px;
-}
-body .container .main-content .left .from .inputs-wrapper .form__input:not(:nth-last-of-type(2)) {
   border: 1px solid rgba(0, 0, 0, 0.32);
   border-radius: 4px;
   width: 360px;
